@@ -1,0 +1,31 @@
+.header {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.4),
+            rgba($color-primary-dark, 0.4)),
+            url(../img/jeshoots-com-219386.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;   
+
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh;
+        z-index: 200;
+       
+        
+    
+}
+
+.skill__main {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.4),
+                rgba($color-primary-dark, 0.4)),
+                url(../img/aperture-vintage-313010.jpg);
+             background-size: cover;
+             background-position: top;
+             position: relative;  
+             padding-top:15rem; 
+             box-shadow: var(--shadow-dark);
+             transform: skewY(-6deg);
+}
