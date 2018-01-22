@@ -182,14 +182,6 @@ h1 {
   flex: 1 0 33%;
   text-align: center; }
 
-.skill {
-  text-align: center;
-  padding-top: 10.8rem;
-  padding-bottom: 5rem;
-  background-color: #0F1126;
-  transition: all .5s;
-  backface-visibility: hidden; }
-
 .project {
   box-shadow: var(--shadow-dark);
   margin-top: -20vh;
@@ -197,7 +189,8 @@ h1 {
   background-color: #0F1126;
   text-align: center;
   transition: all .5s;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  border-style: none; }
 
 .project--shot {
   position: relative;
@@ -245,6 +238,14 @@ h1 {
 
 .project--shot:hover .project--photo {
   filter: blur(0px) brightness(50%); }
+
+.skill {
+  text-align: center;
+  padding-top: 10.8rem;
+  padding-bottom: 5rem;
+  background-color: #0F1126;
+  transition: all .5s;
+  backface-visibility: hidden; }
 
 .stroke {
   display: block;
@@ -406,7 +407,7 @@ nav {
   background-color: #E31B6D;
   position: fixed;
   height: 8rem;
-  width: 97.14%;
+  width: 96.85%;
   display: block;
   border-bottom: 3px solid #FF3366;
   top: 0;

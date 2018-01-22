@@ -261,20 +261,6 @@ box-shadow: var(--shadow-dark);
 
 
 
-.skill {
-    text-align: center;
-    padding-top: 10.8rem;
-    padding-bottom: 5rem;
-    background-color: #0F1126;
-    // background-color: black;
-    
-    
-    
-    transition: all .5s;
-    backface-visibility: hidden;
-   
-    
-}
 .project {
     
     box-shadow: var(--shadow-dark);
@@ -284,6 +270,8 @@ box-shadow: var(--shadow-dark);
     text-align: center;
     transition: all .5s;
     backface-visibility: hidden;
+    border-style: none;
+   
    
 }
 
@@ -295,9 +283,7 @@ box-shadow: var(--shadow-dark);
     backface-visibility: hidden;
 }
 
-.figcaption {
 
-}
 
 .figure__text {
     font-size: 1.7rem;
@@ -359,6 +345,22 @@ box-shadow: var(--shadow-dark);
 
 ///////////////////////////////
 //skill
+
+
+.skill {
+    text-align: center;
+    padding-top: 10.8rem;
+    padding-bottom: 5rem;
+    background-color: #0F1126;
+    // background-color: black;
+    
+    
+    
+    transition: all .5s;
+    backface-visibility: hidden;
+   
+    
+}
 
 
 .stroke {
