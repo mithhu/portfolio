@@ -6,12 +6,17 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Mithhu</title>
+        <link rel="shortcut icon" type="image/png" href="img/mithhu.png">
+        <title>Mithhu | Web Dev</title>
     </head>
     <body>
-        <header class="header">
+        <header id="header" class="header">
+
+                        
+        
+
+
+
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Hi, I'm <span class="heading-primary--submain">Mithhu</span></span>
@@ -23,21 +28,58 @@
         </header>
 
         <main>
-            <section class="section-portfolio">
+            <!-- <section class="section-about" id="section-about">
+                        
+                         
+                        
+                         
+                    
                     <div class="u-center-text u-margin-bottom-big">
                             <h2 class="heading-secondary">
-                                Portfolio
+                                About Me
                             </h2>
-                            <div class="section-portfolio--text">
+                            <div class="section-about--text">
                                     <p class="paragraph">
                                             Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.
                                     </p>
                             </div>
                             
                     </div>
-            </section>
+            </section> -->
+
+          
+            
 
             <section class="project" id="project">
+                        <nav>
+                                        <ul class="nav__list">
+                                                <li class="nav__items">
+                                                        <a href="#" class="nav__link">Home</a>
+                                                </li>
+                                            <!-- <li class="nav__items">
+                                                    <a href="#section-about" class="nav__link">About Me</a>
+                                            </li> -->
+                                            <li class="nav__items">
+                                                        <a href="#project" class="nav__link">Portfolio</a>
+                
+                                            </li>
+                
+                                            <li class="nav__items">
+                                                            <a href="#skill" class="nav__link">Skill</a>
+                
+                                            </li>
+                
+                                            <li class="nav__items">
+                                                        <a href="#section-contact" class="nav__link">Contact</a>
+                
+                                            </li>
+                
+                                                
+                                        </ul>
+                        </nav>   
+
+                        
+                        
                 <div class="project___heading">
                         <h2 class="heading-secondary">
                                 Project
@@ -49,7 +91,7 @@
                                         <img src="img/calculator.jpg" alt="Calculator" class="project--photo">
                                         <figcaption class="figcaption">
                                                 <p class="figure__text">Javascript Calculator</p>
-                                                <a href="#" class="figure__link">See it online</a>
+                                                <a href="https://codepen.io/mithhu/full/vpNEMy" target="_blank" class="figure__link">See it online</a>
         
                                         </figcaption>
         
@@ -57,20 +99,13 @@
 
                                         
                        
-                        <figure class="project--shot">
-                                <img src="img/weather.jpg" alt="Weather" class="project--photo">
-                                <figcaption class="figcaption">
-                                        <p class="figure__text">Weather App</p>
-                                        <a href="#" class="figure__link">See it online</a>
-        
-                                </figcaption>
-                        </figure>
+                       
 
                         <figure class="project--shot">
                                         <img src="img/omni.jpg" alt="Omnifood" class="project--photo">
                                         <figcaption class="figcaption">
-                                                        <p class="figure__text">Omnifood Project</p>
-                                                        <a href="#" class="figure__link">See it online</a>
+                                                <p class="figure__text">Omnifood Project</p>
+                                                <a href="http://mithhu.me/omnifood/" target="_blank" class="figure__link">See it online</a>
                 
                                         </figcaption>
                                 </figure>
@@ -79,8 +114,8 @@
                         <figure class="project--shot">
                                         <img src="img/trillo.jpg" alt="Trillo" class="project--photo">
                                         <figcaption class="figcaption">
-                                                        <p class="figure__text">Trillo Project</p>
-                                                        <a href="#" class="figure__link">See it online</a>
+                                                <p class="figure__text">Trillo Project</p>
+                                                <a href="http://mithhu.me/trillo/" target="_blank" class="figure__link">See it online</a>
                 
                                         </figcaption>
                                 </figure>
@@ -91,7 +126,7 @@
                                 <img src="img/twitch.jpg" alt="Twitch TV" class="project--photo">
                                 <figcaption class="figcaption">
                                         <p class="figure__text">Twitch TV App</p>
-                                        <a href="#" class="figure__link">See it online</a>
+                                        <a href="https://codepen.io/mithhu/full/jGrgMV" target="_blank" class="figure__link">See it online</a>
         
                                 </figcaption>
                         </figure>
@@ -99,8 +134,16 @@
                                 <img src="img/natours.jpg" alt="Natours" class="project--photo">
                                 <figcaption class="figcaption">
                                         <p class="figure__text">Natours Project</p>
-                                        <a href="#" class="figure__link">See it online</a>
+                                        <a href="http://mithhu.me/natours/" target="_blank" class="figure__link">See it online</a>
 
+                                </figcaption>
+                        </figure>
+                        <figure class="project--shot">
+                                <img src="img/weather.jpg" alt="Weather" class="project--photo">
+                                <figcaption class="figcaption">
+                                        <p class="figure__text">Weather App</p>
+                                        <a href="https://codepen.io/mithhu/full/ZJJxYg" target="_blank" class="figure__link">See it online</a>
+        
                                 </figcaption>
                         </figure>
                         
@@ -114,12 +157,14 @@
              
             </section>
 
+         
 
 
 
 
 
-            <section class="skill">
+
+            <section class="skill" id="skill">
                     <div class="skill__main">
                         <div class="skill___heading">
                                 <h2 class="heading-secondary skill__heading">
@@ -129,32 +174,32 @@
         
                        
                         <div class="skill__show">
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#F16528" stroke-width="1px" dy=".2em">HTML5</text>
                                 </svg>
 
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#FFFFFE" stroke-width="1px" dy=".2em">CSS3</text>
                                 </svg>
 
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#FBD603" stroke-width="1px" dy=".2em">JAVASCRIPT</text>
                                 </svg>
 
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#CF51CC" stroke-width="1px" dy=".2em">SASS</text>
                                 </svg>
 
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#1068AD" stroke-width="1px" dy=".2em">jQUERY</text>
                                 </svg>
 
-                                <svg height="300px" width="300px">
+                                <svg class="skill__svg" height="300px" width="300px">
                                         <circle class="stroke" cx="150" cy="150" r="80" />
                                         <text class ="timer" x="50%" y="50%" text-anchor="middle" stroke="#6C43A1" stroke-width="1px" dy=".2em">BOOTSTRAP</text>
                                 </svg>
@@ -167,8 +212,93 @@
                         
         
                      
-                    </section>
-        </main>
+        </section>
+
+        <section class="section-contact" id="section-contact">
+                <div class="row">
+                        <div class="contact">
+                                <div class="contact__form">
+                                        <form action="#" class="form">
+                                                <div class="u-margin-bottom-medium">
+                                                        <h2 class="heading-secondary contact__heading">
+                                                                Contact me
+                                                        </h2>
+                                                </div>
+
+                                                <div class="form-group">
+                                                        
+                                                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+                                                        <label class="form__label" for="message">Your Message</label>
+                                                </div>
+
+                                                <div class="form-group">
+                                                        
+                                                        <input type="text" class="form-control" id="name"  placeholder="Full name" required>
+                                                        <label class="form__label" for="name">Full name</label>
+                                                        
+                                                </div>
+
+                                              
+
+                                                <div class="form-group">
+                                                        
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                                        <label class="form__label" for="email">Email address</label>
+                                                        
+                                                </div>
+
+                                                
+
+                                               
+
+                                                <button type="submit" class="btn btn--white btn--animated">Submit</button>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+</main>
+
+        <footer class="footer">
+
+                <div class="footer__icon">
+                        <a href="https://github.com/mithhu" target="_blank" class="footer__link">
+                                <svg class="icon icon__github">
+                                        <use xlink:href="img/sprite.svg#icon-brand2"></use>
+                                </svg>
+                        </a>
+                        <a href="https://codepen.io/mithhu/pens/popular/" target="_blank" class="footer__link">
+                                <svg class="icon icon__codepen">
+                                                <use xlink:href="img/sprite.svg#icon-brand"></use>
+                                </svg>
+                        </a>        
+                                
+
+                        <a href="https://www.linkedin.com/in/mithhu-hasan-a16219134/" target="_blank" class="footer__link">
+                                <svg class="icon icon__linkedin">
+                                        <use xlink:href="img/sprite.svg#icon-brand3"></use>
+                                </svg>
+                        </a>
+
+                        <a href="https://twitter.com/mithhu_hasan" target="_blank" class="footer__link">
+                                <svg class="icon icon__twitter">
+                                        <use xlink:href="img/sprite.svg#icon-brand4"></use>
+                                </svg>
+                        </a>
+                </div>
+                
+                <div class="footer__text">
+                        <p class="copyright">All rights reserved. <a href="#header" class="copyright__highlights">Mithhu</a> ©2018</p>
+                 </div>
+
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/script.js"></script>
+
+       
         
     </body>
 </html>
