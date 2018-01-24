@@ -267,8 +267,8 @@ h1 {
 
 @media only screen and (max-width: 75em) {
   .skill__svg {
-    height: 200px;
-    width: 200px; } }
+    height: 220px;
+    width: 220px; } }
 
 .skill {
   text-align: center;
@@ -300,9 +300,9 @@ h1 {
   fill: #0F1126; }
   @media only screen and (max-width: 75em) {
     .stroke {
-      cx: 100;
-      cy: 100;
-      r: 70; } }
+      cx: 110;
+      cy: 110;
+      r: 75; } }
 
 .skill__svg {
   box-shadow: var(--shadow-dark); }
