@@ -77,11 +77,11 @@ $color-tertiary-dark: #5643fa;
 
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) {@content};
+        @media only screen and (max-width: 47.5em) {@content};
     }
     
     @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) {@content};
+        @media only screen and (max-width: 58.125em) {@content};
     }
     
     @if $breakpoint == tab-land {
@@ -119,9 +119,13 @@ html {
         font-size: 50%; //1 rem =8px;
     }
     
-    // @include respond(tab-port) { //width<900
-    //     font-size: 50%;
-    // }
+    @include respond(tab-port) { //width<900
+        font-size: 43.75%;
+    }
+
+    @include respond(phone) { //width<900
+        font-size: 37.5%;
+    }
     
      
     

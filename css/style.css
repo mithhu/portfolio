@@ -34,6 +34,12 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 58.125em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 47.5em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -267,8 +273,38 @@ h1 {
 
 @media only screen and (max-width: 75em) {
   .skill__svg {
-    height: 220px;
-    width: 220px; } }
+    height: 210px;
+    width: 210px; } }
+
+@media only screen and (max-width: 58.125em) {
+  .skill__svg {
+    height: 190px;
+    width: 190px; } }
+
+@media only screen and (max-width: 47.5em) {
+  .skill__svg {
+    height: 150px;
+    width: 150px; } }
+
+.stroke {
+  display: block;
+  position: relative;
+  fill: #0F1126; }
+  @media only screen and (max-width: 75em) {
+    .stroke {
+      cx: 105;
+      cy: 105;
+      r: 70; } }
+  @media only screen and (max-width: 58.125em) {
+    .stroke {
+      cx: 95;
+      cy: 95;
+      r: 65; } }
+  @media only screen and (max-width: 47.5em) {
+    .stroke {
+      cx: 75;
+      cy: 75;
+      r: 50; } }
 
 .skill {
   text-align: center;
@@ -293,16 +329,6 @@ h1 {
     .skill__main {
       transform: skewY(-5deg);
       padding-top: 10rem; } }
-
-.stroke {
-  display: block;
-  position: relative;
-  fill: #0F1126; }
-  @media only screen and (max-width: 75em) {
-    .stroke {
-      cx: 110;
-      cy: 110;
-      r: 75; } }
 
 .skill__svg {
   box-shadow: var(--shadow-dark); }
@@ -333,6 +359,9 @@ h1 {
   @media only screen and (max-width: 75em) {
     .skill__show {
       transform: skewY(5deg); } }
+  @media only screen and (max-width: 58.125em) {
+    .skill__show {
+      padding-left: 10rem; } }
 
 .skill__heading {
   transform: skewY(6deg); }
@@ -355,6 +384,12 @@ h1 {
   @media only screen and (max-width: 75em) {
     .section-contact {
       padding: 22rem 17rem 5rem 17rem; } }
+  @media only screen and (max-width: 58.125em) {
+    .section-contact {
+      padding: 20rem 10rem 5rem 10rem; } }
+  @media only screen and (max-width: 47.5em) {
+    .section-contact {
+      padding: 20rem 5rem 5rem 5rem; } }
 
 .contact__heading {
   padding-bottom: 3rem; }
@@ -489,6 +524,9 @@ nav {
   @media only screen and (max-width: 75em) {
     .nav__bar {
       width: 95.3%; } }
+  @media only screen and (max-width: 58.125em) {
+    .nav__bar {
+      width: 94.7%; } }
 
 .nav__bar .nav__list {
   display: flex;

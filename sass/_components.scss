@@ -105,6 +105,8 @@ h1 {
         font-family: inherit;
         border: none;
         cursor: pointer;
+
+       
     }
     
     &:hover {
@@ -398,11 +400,48 @@ box-shadow: var(--shadow-dark);
 
 .skill__svg {
     @include respond(tab-land) {
-        height: 220px;
-        width: 220px; 
+        height: 210px;
+        width: 210px; 
     }
+
+    @include respond(tab-port) { //width<900
+        height: 190px;
+        width: 190px;
+    }
+
+    @include respond(phone) { //width<900
+        height: 150px;
+        width: 150px;
+    }
+
    
 }
+
+.stroke {
+    display: block;
+    position: relative;
+    fill: #0F1126;
+
+    @include respond(tab-land) {
+        cx: 105;
+        cy: 105;
+        r: 70;
+    }
+
+    @include respond(tab-port) { //width<900
+        cx: 95;
+        cy: 95;
+        r: 65;
+    }
+
+    @include respond(phone) { //width<900
+        cx: 75;
+        cy: 75;
+        r: 50;
+    }
+   
+      
+    }
 
 
 .skill {
@@ -441,19 +480,7 @@ box-shadow: var(--shadow-dark);
          
 }
 
-.stroke {
-    display: block;
-    position: relative;
-    fill: #0F1126;
 
-    @include respond(tab-land) {
-        cx: 110;
-        cy: 110;
-        r: 75;
-    }
-   
-      
-    }
     .skill__svg {
         box-shadow: var(--shadow-dark);
      }
@@ -489,6 +516,10 @@ box-shadow: var(--shadow-dark);
 
         @include respond(tab-land) {
            transform: skewY(5deg);
+        }
+
+        @include respond(tab-port) { //width<900
+            padding-left: 10rem;
         }
     
 
@@ -533,6 +564,13 @@ box-shadow: var(--shadow-dark);
         padding: 22rem 17rem 5rem 17rem;
     }
     
+    @include respond(tab-port) {
+        padding: 20rem 10rem 5rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 20rem 5rem 5rem 5rem;
+    }
    
     
 }
