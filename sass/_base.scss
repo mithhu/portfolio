@@ -85,7 +85,7 @@ $color-tertiary-dark: #5643fa;
     }
     
     @if $breakpoint == tab-land {
-        @media only screen and (max-width: 64em) {@content};
+        @media only screen and (max-width: 75em) {@content};
     }
     
     @if $breakpoint == laptop {
