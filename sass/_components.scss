@@ -1,3 +1,7 @@
+
+
+
+
 ////////////////////////
 //FRONT PAGE
 
@@ -62,6 +66,15 @@
 
 h1 {
     padding-bottom: 30rem;
+
+    @include respond(laptop) {
+        padding-bottom: 20rem;
+    }
+
+    @include respond(tab-land) {
+       padding-bottom: 10rem;
+    }
+
 }
 .heading-secondary {
     color: var(--color-pink);
@@ -237,6 +250,15 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5rem 30rem;
+
+    @include respond(laptop) {
+        padding: 5rem 20rem;
+    }
+
+    @include respond(tab-land) {
+       padding: 5rem 10rem;
+    }
+
     
 }
 
@@ -271,6 +293,13 @@ box-shadow: var(--shadow-dark);
     transition: all .5s;
     backface-visibility: hidden;
     border-style: none;
+
+    @include respond(tab-land) {
+        margin-top: -15vh;
+        padding: 18rem 0 0 0;
+
+    }
+
    
    
 }
@@ -288,7 +317,7 @@ box-shadow: var(--shadow-dark);
 .figure__text {
     font-size: 1.7rem;
     
-    transform: translate(-50%, -450%);
+    transform: translate(-50%, -350%);
     // border: 1px solid var(--color-pink);
     color: #fff; 
     position: absolute;
@@ -300,6 +329,10 @@ box-shadow: var(--shadow-dark);
     backface-visibility: hidden;
     background-color: var(--color-pink);
     padding: .5rem 1rem;
+
+    @include respond(laptop) {
+        transform: translate(-50%, -280%);
+    }
     
 }
 
@@ -319,6 +352,12 @@ box-shadow: var(--shadow-dark);
     text-decoration: none;
     padding: 1rem 2rem;
     border-radius: 8rem;
+
+    @include respond(laptop) {
+        transform: translate(-50%, 160%);
+    }
+
+    
    
 }
 
@@ -333,6 +372,11 @@ box-shadow: var(--shadow-dark);
     opacity: 1;
     transform: translate(-50%, 100%);
     box-shadow: var(--shadow-dark);
+
+    @include respond(laptop) {
+        transform: translate(-50%, 80%);
+    }
+    
     
 }
 
@@ -346,27 +390,61 @@ box-shadow: var(--shadow-dark);
 ///////////////////////////////
 //skill
 
+.skill__svg {
+    @include respond(tab-land) {
+        height: 200px;
+        width: 200px; 
+    }
+   
+}
+
 
 .skill {
     text-align: center;
     padding-top: 10.8rem;
     padding-bottom: 5rem;
     background-color: #0F1126;
-    // background-color: black;
-    
-    
-    
     transition: all .5s;
     backface-visibility: hidden;
+
+    @include respond(tab-land) {
+        padding-top: 5.5rem;
+    }
    
     
 }
 
+.skill__main {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.4),
+            rgba($color-primary-dark, 0.4)),
+            url(../img/aperture-vintage-313010.jpg);
+         background-size: cover;
+         background-position: top;
+         position: relative;  
+         
+         box-shadow: var(--shadow-dark);
+         transform: skewY(-6deg);
+         z-index: 100;
+
+         @include respond(tab-land) {
+            transform: skewY(-5deg);
+            padding-top: 10rem; 
+        }
+         
+}
 
 .stroke {
     display: block;
     position: relative;
     fill: #0F1126;
+
+    @include respond(tab-land) {
+        cx: 100;
+        cy: 100;
+        r: 70;
+    }
    
       
     }
@@ -395,12 +473,27 @@ box-shadow: var(--shadow-dark);
         padding-left: 50rem;
         transform: skewY(6deg);
         padding-bottom: 15rem;
+
+        @include respond(tab-land) {
+           transform: skewY(5deg);
+        }
+    
+
+        @include respond(laptop) {
+            max-width: 90%;
+            padding-left: 20rem;
+            padding-top: 5rem;
+        }
      
         
       }
 
       .skill__heading {
         transform: skewY(6deg);
+
+        @include respond(tab-land) {
+            transform: skewY(5deg);
+        }
 
       }
 
@@ -422,6 +515,15 @@ box-shadow: var(--shadow-dark);
     padding-bottom: 5rem;
     margin-top: -15vh;
     background-color: #0F1126;
+
+    @include respond(laptop) {
+        padding: 25rem 25rem 5rem 25rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 22rem 17rem 5rem 17rem;
+    }
+    
    
     
 }
@@ -452,6 +554,10 @@ box-shadow: var(--shadow-dark);
 .contact__form {
     width: 50%;
     padding: 4rem;
+
+    @include respond(laptop) {
+        padding: 2rem;
+    }
 
     
 }
@@ -523,6 +629,10 @@ box-shadow: var(--shadow-dark);
 .footer {
     background-color: $color-primary;
     padding: 5rem 10rem 5rem 10rem;
+
+    @include respond(tab-land) {
+        padding: 5rem 10rem 3rem 10rem;
+    }
 }
 .footer__icon {
     
