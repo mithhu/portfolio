@@ -357,7 +357,7 @@ box-shadow: var(--shadow-dark);
         transform: translate(-50%, -280%);
     }
 
-    @media only screen and (hover:none) {
+    @media only screen and (any-hover:none) {
             opacity: 1;
             transform: translate(-50%, -100%);
             box-shadow: var(--shadow-dark);
@@ -385,7 +385,7 @@ box-shadow: var(--shadow-dark);
         transform: translate(-50%, 160%);
     }
 
-    @media only screen and (hover:none) {
+    @media only screen and (any-hover:none) {
         opacity: 1;
         transform: translate(-50%, 80%);
         box-shadow: var(--shadow-dark);
