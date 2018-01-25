@@ -312,6 +312,12 @@ box-shadow: var(--shadow-dark);
 
     @include respond(tab-land) {
         margin-top: -15vh;
+        padding: 30rem 0 0 0;
+
+    }
+
+    @include respond(tab-port) {
+        
         padding: 25rem 0 0 0;
 
     }
