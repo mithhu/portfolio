@@ -40,6 +40,9 @@ html {
   @media only screen and (max-width: 47.5em) {
     html {
       font-size: 37.5%; } }
+  @media only screen and (max-width: 28.125em) {
+    html {
+      font-size: 34.375%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -204,6 +207,12 @@ h1 {
 .project__show > figure {
   flex: 1 0 33%;
   text-align: center; }
+  @media only screen and (max-width: 47.5em) {
+    .project__show > figure {
+      flex: 1 0 45%; } }
+  @media only screen and (max-width: 28.125em) {
+    .project__show > figure {
+      flex: 1 0 65%; } }
 
 .project {
   margin-top: -20vh;
@@ -217,6 +226,9 @@ h1 {
     .project {
       margin-top: -15vh;
       padding: 18rem 0 0 0; } }
+  @media only screen and (max-width: 47.5em) {
+    .project {
+      padding: 20rem 0 0 0; } }
 
 .project--shot {
   position: relative; }
@@ -286,6 +298,11 @@ h1 {
     height: 150px;
     width: 150px; } }
 
+@media only screen and (max-width: 28.125em) {
+  .skill__svg {
+    height: 120px;
+    width: 120px; } }
+
 .stroke {
   display: block;
   position: relative;
@@ -305,6 +322,11 @@ h1 {
       cx: 75;
       cy: 75;
       r: 50; } }
+  @media only screen and (max-width: 75em) {
+    .stroke {
+      cx: 60;
+      cy: 60;
+      r: 40; } }
 
 .skill {
   text-align: center;
@@ -329,6 +351,9 @@ h1 {
     .skill__main {
       transform: skewY(-5deg);
       padding-top: 10rem; } }
+  @media only screen and (max-width: 58.125em) {
+    .skill__main {
+      padding-left: 5rem; } }
 
 .skill__svg {
   box-shadow: var(--shadow-dark); }
@@ -389,7 +414,7 @@ h1 {
       padding: 20rem 10rem 5rem 10rem; } }
   @media only screen and (max-width: 47.5em) {
     .section-contact {
-      padding: 20rem 5rem 5rem 5rem; } }
+      padding: 22rem 7rem 7rem 7rem; } }
 
 .contact__heading {
   padding-bottom: 3rem; }
@@ -404,6 +429,10 @@ h1 {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 28.125em) {
+    .contact {
+      background-image: url(../img/jad-limcaco-272413.jpg);
+      background-size: cover; } }
 
 .contact__form {
   width: 50%;
@@ -411,6 +440,21 @@ h1 {
   @media only screen and (max-width: 90em) {
     .contact__form {
       padding: 2rem; } }
+  @media only screen and (max-width: 47.5em) {
+    .contact__form {
+      padding: 1rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .contact__form {
+      width: 100%; } }
+
+@media only screen and (max-width: 28.125em) {
+  .form-group {
+    width: 95%;
+    padding-left: 5rem; } }
+
+@media only screen and (max-width: 47.5em) {
+  .form {
+    text-align: center; } }
 
 .form-group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -527,6 +571,9 @@ nav {
   @media only screen and (max-width: 58.125em) {
     .nav__bar {
       width: 94.7%; } }
+  @media only screen and (max-width: 28.125em) {
+    .nav__bar {
+      width: 92%; } }
 
 .nav__bar .nav__list {
   display: flex;

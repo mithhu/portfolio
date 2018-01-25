@@ -287,6 +287,14 @@ box-shadow: var(--shadow-dark);
 {
    flex: 1 0 33%;
    text-align: center;
+   @include respond(phone) { //width<900
+    flex: 1 0 45%;
+    }
+
+    @include respond(phone-medium) { //width<900
+        flex: 1 0 65%;
+        }
+
 }
 
 
@@ -308,9 +316,14 @@ box-shadow: var(--shadow-dark);
 
     }
 
+    @include respond(phone) { //width<900
+        padding: 20rem 0 0 0;
+    }
+
    
    
 }
+
 
 
 
@@ -414,6 +427,11 @@ box-shadow: var(--shadow-dark);
         width: 150px;
     }
 
+    @include respond(phone-medium) { //width<900
+        height: 120px;
+        width: 120px;
+    }
+
    
 }
 
@@ -438,6 +456,12 @@ box-shadow: var(--shadow-dark);
         cx: 75;
         cy: 75;
         r: 50;
+    }
+
+    @include respond(tab-land) {
+        cx: 60;
+        cy: 60;
+        r: 40;
     }
    
       
@@ -476,6 +500,10 @@ box-shadow: var(--shadow-dark);
          @include respond(tab-land) {
             transform: skewY(-5deg);
             padding-top: 10rem; 
+        }
+
+        @include respond(tab-port) {
+            padding-left: 5rem; 
         }
          
 }
@@ -569,7 +597,7 @@ box-shadow: var(--shadow-dark);
     }
 
     @include respond(phone) {
-        padding: 20rem 5rem 5rem 5rem;
+        padding: 22rem 7rem 7rem 7rem;
     }
    
     
@@ -595,8 +623,19 @@ box-shadow: var(--shadow-dark);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+
+    @include respond(phone-medium) { 
+
+    background-image: url(../img/jad-limcaco-272413.jpg);
+    background-size: cover;
+           
+    }
    
 }
+
+// .u-margin-bottom-medium {
+//     text-align: center;
+// }
 
 .contact__form {
     width: 50%;
@@ -605,13 +644,28 @@ box-shadow: var(--shadow-dark);
     @include respond(laptop) {
         padding: 2rem;
     }
-
+    @include respond(phone) {
+        padding: 1rem;
+    }
+    @include respond(phone-medium) {
+        width: 100%;
+    }
     
 }
 
+.form-group {
 
+    @include respond(phone-medium) {
+        width: 95%;
+        padding-left: 5rem;
+    }
+    
+}
 
 .form {
+    @include respond(phone) {
+        text-align: center;
+    }
     &-group:not(:last-child) {
         margin-bottom: 2rem;
     }

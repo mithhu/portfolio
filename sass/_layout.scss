@@ -58,7 +58,11 @@ nav {
         }
         @include respond(tab-port) {
                 width: 94.7%;
-            }
+        }
+        @include respond(phone-medium) {
+                width: 92%;
+        }    
+        
 }
 
 .nav__bar .nav__list {
